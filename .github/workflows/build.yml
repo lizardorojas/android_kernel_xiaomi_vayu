@@ -15,7 +15,7 @@ jobs:
         with:
           kernel-url: '.'
           kernel-dir: '.'
-          config: vayu_user_defconfig
+          config: vayu_defconfig
           arch: arm64
           other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
           disable-lto: true
