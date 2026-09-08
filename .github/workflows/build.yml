@@ -1,4 +1,4 @@
-name: Compilar Kernel
+name: Compilar Kernel Vayu
 
 on:
   workflow_dispatch:
@@ -7,9 +7,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Descargar codigo
-        uses: actions/checkout@v3
-
-      - name: Preparar entorno
-        run: |
-          echo "Preparando servidores..."
+      - name: Compilar Kernel Android
+        uses: dabao1955/kernel_build_action@main
+        with:
+          kernel-url: https://github.com/lagartorojas/android_kernel_xiaomi_vayu
+          kernel-branch: cyf
+          config: vayu_user_defconfig
+          arch: arm64
+          aosp-gcc: true
+          aosp-clang: true
+          aosp-clang-version: r383902
+          ksu: false
