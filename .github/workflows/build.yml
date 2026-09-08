@@ -17,7 +17,7 @@ jobs:
           kernel-dir: '.'
           config: vayu_defconfig
           arch: arm64
-          clang: true
+          aosp-clang: true
           aosp-clang-version: r416183b
           aosp-gcc: true
           disable-lto: true
