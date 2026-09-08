@@ -9,14 +9,12 @@ jobs:
     steps:
       - name: Descargar código fuente
         uses: actions/checkout@v4
-        with:
-          path: kernel_src
 
       - name: Compilar Kernel Android
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/lagartorojas/android_kernel_xiaomi_vayu
-          kernel-dir: 'kernel_src'
+          kernel-source: local
+          kernel-dir: '.'
           config: vayu_user_defconfig
           arch: arm64
           other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
