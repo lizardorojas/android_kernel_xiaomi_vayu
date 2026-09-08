@@ -10,7 +10,7 @@ jobs:
       - name: Compilar Kernel Android
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-url: https://github.com/lagartorojas/android_kernel_xiaomi_vayu
+          kernel-url: https://github.com/lagartorojas/android_kernel_xiaomi_vayu.git
           kernel-branch: cyf
           config: vayu_user_defconfig
           arch: arm64
