@@ -10,11 +10,6 @@ jobs:
       - name: Descargar código fuente
         uses: actions/checkout@v4
 
-      - name: Instalar librerías de compatibilidad
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y libncurses5 libtinfo5 libncurses5-dev
-
       - name: Compilar Kernel Android
         uses: dabao1955/kernel_build_action@main
         with:
@@ -22,7 +17,7 @@ jobs:
           kernel-dir: '.'
           config: vayu_defconfig
           arch: arm64
-          other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
+          clang-version: r416183b
           disable-lto: true
           anykernel3: true
           ksu: false
