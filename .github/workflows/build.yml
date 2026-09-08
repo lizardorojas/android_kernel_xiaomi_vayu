@@ -13,7 +13,7 @@ jobs:
       - name: Compilar Kernel Android
         uses: dabao1955/kernel_build_action@main
         with:
-          kernel-source: local
+          kernel-url: '.'
           kernel-dir: '.'
           config: vayu_user_defconfig
           arch: arm64
