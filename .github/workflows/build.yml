@@ -5,10 +5,15 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-22.04
     steps:
       - name: Descargar código fuente
         uses: actions/checkout@v4
+
+      - name: Instalar librerías de compatibilidad
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libncurses5 libtinfo5 libncurses5-dev
 
       - name: Compilar Kernel Android
         uses: dabao1955/kernel_build_action@main
