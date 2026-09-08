@@ -14,8 +14,10 @@ jobs:
           kernel-branch: cyf
           config: vayu_user_defconfig
           arch: arm64
-          aosp-gcc: true
           aosp-clang: true
+          aosp-clang-version: r416183b
+          aosp-gcc: false
           disable-lto: true
           anykernel3: true
           ksu: false
+          
