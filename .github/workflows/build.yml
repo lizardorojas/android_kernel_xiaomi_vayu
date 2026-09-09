@@ -20,6 +20,6 @@ jobs:
           other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
           aosp-gcc: false
           disable-lto: true
+          disable-vdso32: true
           anykernel3: true
           ksu: false
-          extra-make-args: CONFIG_VDSO32=n
