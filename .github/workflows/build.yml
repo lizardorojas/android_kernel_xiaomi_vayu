@@ -18,6 +18,7 @@ jobs:
           config: vayu_defconfig
           arch: arm64
           other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
+          aosp-gcc: false
           disable-lto: true
           anykernel3: true
           ksu: false
