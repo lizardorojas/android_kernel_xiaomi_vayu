@@ -17,9 +17,7 @@ jobs:
           kernel-dir: '.'
           config: vayu_defconfig
           arch: arm64
-          aosp-clang: true
-          aosp-clang-version: r416183b
-          aosp-gcc: true
+          other-clang-url: https://github.com/kdrag0n/proton-clang/archive/refs/heads/master.tar.gz
           disable-lto: true
           anykernel3: true
           ksu: false
