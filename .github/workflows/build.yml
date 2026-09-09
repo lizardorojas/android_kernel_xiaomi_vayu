@@ -21,3 +21,4 @@ jobs:
           disable-lto: true
           anykernel3: true
           ksu: false
+          extra-cmd: CONFIG_VDSO32=n
